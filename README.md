@@ -82,3 +82,8 @@
    - **DELETE Request**: https://n04iwlh2ma.execute-api.us-east-2.amazonaws.com/dev/StudentRecordHandler/students?student_id=21
      ![App Screenshot](images/14.png)
      ![App Screenshot](images/15.png)
+
+### Reflection :
+- Working with AWS Lambda provided me with insights into how it differs significantly from traditional services like AWS EC2. Unlike EC2, which requires manual scaling and continuous operation, Lambda is auto-scalable and event-driven. It executes code only when invoked and then returns to an idle state, making it highly efficient for on-demand opera\ons.
+- I learned how Lambda can be leveraged for various backend tasks such as notification broadcasting, image compression, and more, making it a versatile tool. Its cost- effectiveness especially for tasks with intermi1ent workloads. However, I also recognized some limita\ons, such as cold start delays and a limited execution time for long-running tasks, which need to be considered depending on the use case.
+- Another interesting aspect was DynamoDB’s integration with AWS Lambda. This integration made it easier to build a fully serverless application, allowing me to quickly read and write data without managing any infrastructure.
