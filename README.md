@@ -67,18 +67,18 @@
      ![App Screenshot](images/9.png)
 
      <br />
-   - **GET Request**: https://n04iwlh2ma.execute-api.us-east- 2.amazonaws.com/dev/StudentRecordHandler/students?student_id=017992624
+   - **GET Request**: https://n04iwlh2ma.execute-api.us-east-2.amazonaws.com/dev/StudentRecordHandler/students?student_id=017992624
      ![App Screenshot](images/10.png)
 
      Let’s add some more records:
      ![App Screenshot](images/11.png)
 
       <br />
-   - **PUT Request**: https://n04iwlh2ma.execute-api.us-east- 2.amazonaws.com/dev/StudentRecordHandler/students
+   - **PUT Request**: https://n04iwlh2ma.execute-api.us-east-2.amazonaws.com/dev/StudentRecordHandler/students
      ![App Screenshot](images/12.png)
      ![App Screenshot](images/13.png)
 
       <br />
-   - **DELETE Request**: https://n04iwlh2ma.execute-api.us-east- 2.amazonaws.com/dev/StudentRecordHandler/students?student_id=21
+   - **DELETE Request**: https://n04iwlh2ma.execute-api.us-east-2.amazonaws.com/dev/StudentRecordHandler/students?student_id=21
      ![App Screenshot](images/14.png)
      ![App Screenshot](images/15.png)
