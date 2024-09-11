@@ -43,6 +43,27 @@
 ![App Screenshot](images/7.png)
 
 
+### Python Example Code (for basic CRUD operations):
+![App Screenshot](images/carbon.png)
+
+### Creating an API Gateway
+1. Go to API Gateway in the AWS Management Console.
+2. Create a new REST API:
+   - API Name: StudentAPI
+3. Set up the following resources and methods:
+   - POST /students: Trigger the Lambda function to add a new student.
+   - GET /students: Trigger the Lambda function to retrieve student details by student_id.
+4. Deploy the API and note down the Invoke URL.
+
+### Testing the Application
+1. Use Postman or curl to test the API by sending HTTP requests to the deployed API Gateway.
+   - POST Request: https://n04iwlh2ma.execute-api.us-east-amazonaws.com/dev/StudentRecordHandler/students
+   
 ![App Screenshot](images/8.png)
 ![App Screenshot](images/9.png)
 ![App Screenshot](images/10.png)
+![App Screenshot](images/11.png)
+![App Screenshot](images/12.png)
+![App Screenshot](images/13.png)
+![App Screenshot](images/14.png)
+![App Screenshot](images/15.png)
