@@ -20,12 +20,17 @@
    - Table Name: StudentRecords
    - Primary Key: student_id (String)
 3. After the table is created, note down the table name.
-![App Screenshot](images/1.png)
-![App Screenshot](images/2.png)
+   ![App Screenshot](images/1.png)
 
-![App Screenshot](images/3.png)
-![App Screenshot](images/4.png)
-![App Screenshot](images/5.png)
+### Configuring IAM Role for AWS Lambda and DynamoDB
+#### To allow the Lambda function to interact with DynamoDB, I created a new IAM role with the necessary permissions:
+
+1. Created a New IAM Role: I navigated to the IAM management console and created a new role specifically for the Lambda service.
+2. Assigned DynamoDB Permissions: I attached the "AmazonDynamoDBFullAccess" policy to the role to ensure the Lambda function can perform CRUD operations on the DynamoDB table.
+3. Attached the Role to Lambda: After creating the role, I linked it to my Lambda function, allowing it to execute with the necessary permissions to access DynamoDB.
+
+   ![App Screenshot](images/3.png)
+   ![App Screenshot](images/5.png)
 
 
 ### Creating an AWS Lambda Function
@@ -57,20 +62,23 @@
 
 ### Testing the Application
 1. Use Postman or curl to test the API by sending HTTP requests to the deployed API Gateway.
-   - POST Request: https://n04iwlh2ma.execute-api.us-east-amazonaws.com/dev/StudentRecordHandler/students
+   - **POST Request**: https://n04iwlh2ma.execute-api.us-east-amazonaws.com/dev/StudentRecordHandler/students
      ![App Screenshot](images/8.png)
      ![App Screenshot](images/9.png)
 
-   - GET Request: https://n04iwlh2ma.execute-api.us-east- 2.amazonaws.com/dev/StudentRecordHandler/students?student_id=017992624
+     <br />
+   - **GET Request**: https://n04iwlh2ma.execute-api.us-east- 2.amazonaws.com/dev/StudentRecordHandler/students?student_id=017992624
      ![App Screenshot](images/10.png)
 
      Let’s add some more records:
      ![App Screenshot](images/11.png)
 
-   - PUT Request: https://n04iwlh2ma.execute-api.us-east- 2.amazonaws.com/dev/StudentRecordHandler/students
+      <br />
+   - **PUT Request**: https://n04iwlh2ma.execute-api.us-east- 2.amazonaws.com/dev/StudentRecordHandler/students
      ![App Screenshot](images/12.png)
      ![App Screenshot](images/13.png)
-     
-   - DELETE Request: https://n04iwlh2ma.execute-api.us-east- 2.amazonaws.com/dev/StudentRecordHandler/students?student_id=21
+
+      <br />
+   - **DELETE Request**: https://n04iwlh2ma.execute-api.us-east- 2.amazonaws.com/dev/StudentRecordHandler/students?student_id=21
      ![App Screenshot](images/14.png)
      ![App Screenshot](images/15.png)
