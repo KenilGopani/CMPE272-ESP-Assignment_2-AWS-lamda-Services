@@ -58,12 +58,19 @@
 ### Testing the Application
 1. Use Postman or curl to test the API by sending HTTP requests to the deployed API Gateway.
    - POST Request: https://n04iwlh2ma.execute-api.us-east-amazonaws.com/dev/StudentRecordHandler/students
-   
-![App Screenshot](images/8.png)
-![App Screenshot](images/9.png)
-![App Screenshot](images/10.png)
-![App Screenshot](images/11.png)
-![App Screenshot](images/12.png)
-![App Screenshot](images/13.png)
-![App Screenshot](images/14.png)
-![App Screenshot](images/15.png)
+     ![App Screenshot](images/8.png)
+     ![App Screenshot](images/9.png)
+
+   - GET Request: https://n04iwlh2ma.execute-api.us-east- 2.amazonaws.com/dev/StudentRecordHandler/students?student_id=017992624
+     ![App Screenshot](images/10.png)
+
+     Let’s add some more records:
+     ![App Screenshot](images/11.png)
+
+   - PUT Request: https://n04iwlh2ma.execute-api.us-east- 2.amazonaws.com/dev/StudentRecordHandler/students
+     ![App Screenshot](images/12.png)
+     ![App Screenshot](images/13.png)
+     
+   - DELETE Request: https://n04iwlh2ma.execute-api.us-east- 2.amazonaws.com/dev/StudentRecordHandler/students?student_id=21
+     ![App Screenshot](images/14.png)
+     ![App Screenshot](images/15.png)
